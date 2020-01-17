@@ -195,6 +195,13 @@
   color: #888888;
 }
 
+.signup-last-text {
+  font-family: 'Lato';
+  font-size: 15px;
+  text-align: center;
+  color: #939393;
+}
+
 .header .btn-red {
   border-radius: 3px;
   -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06),
@@ -631,6 +638,17 @@ p.p-progress {
   line-height: 2;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 0;
+}
+
+.card-user-bg .p-last-user {
+  font-family: 'Lato',
+    sans-serif;
+  font-size: 14px;
+  line-height: 2.57;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
 }
 
 .card-user-bg .card-img-overlay {
@@ -670,9 +688,7 @@ p.p-progress {
   top: 0;
 }
 
-.card-user-bg .p-user {
-  margin-bottom: 57px;
-}
+
 
 .carousel-inner {
   overflow: visible;
@@ -720,7 +736,6 @@ p.p-progress {
   }
 
   #myCarousel {
-    margin-top: 0;
     position: absolute;
     top: 90%;
     left: 0;
@@ -744,8 +759,11 @@ p.p-progress {
     top: 0;
   }
 
-  .card-user-bg .p-user {
-    margin-bottom: 57px;
+}
+
+@media (max-width: 768px) and (orientation : landscape) {
+  #myCarousel {
+    top: 94%;
   }
 }
 
