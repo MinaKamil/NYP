@@ -10,6 +10,13 @@
   margin-top: 60px
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .header .logo-img {
+    margin-top: 0
+  }
+}
+
 .header .card-title-img {
   margin-top: 100px;
   width: 529px;
@@ -20,10 +27,28 @@
   margin-bottom: 0;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .header .card-title-img {
+    width: auto;
+    margin-top: 90px;
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+
 .header .header-line {
   border: 3px solid #fff;
   width: 300px;
   margin: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .header .header-line {
+    width: 181px;
+    margin: 0 auto 0 27px;
+  }
 }
 
 .header .header-text {
@@ -33,6 +58,13 @@
   font-size: 17px;
   line-height: 1.53;
   margin-top: 15px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .header .header-text {
+    width: auto;
+  }
 }
 
 .header .card-login {
@@ -163,7 +195,7 @@
   color: #888888;
 }
 
-.header .card-login .btn-red {
+.header .btn-red {
   border-radius: 3px;
   -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06),
     0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -310,6 +342,16 @@
   margin-top: -1.75rem;
   text-align: center;
   left: 130px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .progress__number {
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 0;
+    left: 0;
+  }
 }
 
 .progress--pie:before {
@@ -547,6 +589,15 @@ p.p-progress {
   width: 266px;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  p.p-progress {
+    width: auto;
+    margin-top: 40px;
+    font-size: 15px;
+  }
+}
+
 /* !End Statistic Section */
 /* ?Start Users Section */
 .user {
@@ -584,6 +635,39 @@ p.p-progress {
 
 .card-user-bg .card-img-overlay {
   top: 50%;
+}
+
+@media (min-width: 769px) {
+  .card-user-bg .card-img-top {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .card-user-bg .card-img-overlay {
+    top: 67px;
+    background-image: linear-gradient(145deg, #0d9b49, rgba(25, 206, 101, 0.6) 95%);
+  }
+
+  .card-user-bg .card-img-top {
+    background-image: linear-gradient(145deg, #0d9b49, rgba(25, 206, 101, 0.6) 95%);
+  }
+
+  .card-user-bg .carousel-caption {
+    right: -9%;
+    bottom: -58px;
+    left: -7%;
+  }
+
+  .card-user-bg .user-text {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .carousel-inner {
+    margin-top: 400px;
+  }
 }
 
 #myCarousel {
@@ -645,8 +729,16 @@ p.p-progress {
   color: #4d4d4d;
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .all-in-one {
+    margin-top: 75px;
+  }
+}
+
 /* !End All-in-one Section */
-/* !Start Fotter Section */
+
+/* ?Start Fotter Section */
 .footer .card-body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f9fc), to(#ffffff));
   background-image: linear-gradient(to bottom, #f6f9fc, #ffffff);
@@ -670,6 +762,13 @@ p.p-progress {
   text-align: center;
   color: #939393;
   margin: 0 auto;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .footer-text {
+    width: auto;
+  }
 }
 
 .footer .btn-red {
