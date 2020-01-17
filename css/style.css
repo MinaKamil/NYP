@@ -643,36 +643,35 @@ p.p-progress {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  .card-user-bg .card-img-overlay {
-    top: 67px;
-    background-image: linear-gradient(145deg, #0d9b49, rgba(25, 206, 101, 0.6) 95%);
-  }
-
-  .card-user-bg .card-img-top {
-    background-image: linear-gradient(145deg, #0d9b49, rgba(25, 206, 101, 0.6) 95%);
-  }
-
-  .card-user-bg .carousel-caption {
-    right: -9%;
-    bottom: -58px;
-    left: -7%;
-  }
-
-  .card-user-bg .user-text {
-    font-size: 20px;
-    font-weight: normal;
-  }
-
-  .carousel-inner {
-    margin-top: 400px;
-  }
-}
 
 #myCarousel {
-  margin-top: 200px;
-  position: relative;
+  margin-top: 0;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  margin-top: 0;
+}
+
+.card-user-bg .card-img-overlay {
+  top: 10%;
+}
+
+.carousel-indicators {
+  top: 0;
+}
+
+.carousel-indicators img {
+  top: 0;
+}
+
+.card-user-bg .p-user {
+  margin-bottom: 57px;
 }
 
 .carousel-inner {
@@ -696,9 +695,58 @@ p.p-progress {
   left: 0;
 }
 
-.carousel-indicators {
-  top: 90px;
-  position: absolute;
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+  .card-user-bg .card-img-overlay {
+    /* top: 67px; */
+    background-image: linear-gradient(145deg, #0d9b49, rgba(25, 206, 101, 0.6) 95%);
+  }
+
+  .card-user-bg .card-img-top {
+    background-image: linear-gradient(145deg, #0d9b49, rgba(25, 206, 101, 0.6) 95%);
+  }
+
+  .card-user-bg .user-text {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .card-user-bg .carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  #myCarousel {
+    margin-top: 0;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    width: 95%;
+  }
+
+  .carousel-inner {
+    margin-top: 0;
+  }
+
+  .card-user-bg .card-img-overlay {
+    top: 10%;
+  }
+
+  .carousel-indicators {
+    top: 0;
+  }
+
+  .carousel-indicators img {
+    top: 0;
+  }
+
+  .card-user-bg .p-user {
+    margin-bottom: 57px;
+  }
 }
 
 /* !End Users Section */
@@ -798,4 +846,5 @@ p.p-progress {
   line-height: 1.73;
   text-align: center;
   color: #939393;
+}
 }
